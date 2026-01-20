@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# venv
+.venv/
+venv/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite / React
+frontend/cartola-ui/dist/
+frontend/cartola-ui/.env
+frontend/cartola-ui/.env.*.local
+
+# Backend env & artifacts
+backend/.env
+backend/.env.*
+backend/models/
+backend/data/processed/
+backend/data/raw/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

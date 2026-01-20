@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+pydantic
+requests
+sqlalchemy
+joblib
+python-dotenv
+cachetools
+pulp
+pytest
