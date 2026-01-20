@@ -38,5 +38,5 @@ def backtest_resumo(
         min_train_rounds=int(min_train_rounds),
     )
 
-    cache_set(cache_key, result, ttl_seconds=15 * 60)  # 15 minutos
+    cache_set(cache_key, result, ttl_seconds=15 * 60)  # 15 min
     return result
