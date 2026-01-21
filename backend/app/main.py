@@ -4,7 +4,6 @@ from app.api.routes import router
 
 app = FastAPI(title="Cartola FC ML")
 
-# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -17,7 +16,3 @@ app.add_middleware(
 )
 
 app.include_router(router)
-
-@app.get("/api/health")
-def health():
-    return {"status": "ok"}
