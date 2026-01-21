@@ -37,3 +37,6 @@ backend/data/raw/
 .DS_Store
 .idea/
 .vscode/
+
+# Deploy artifacts (do not commit huge models)
+backend/artifacts/model.joblib

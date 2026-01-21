@@ -138,7 +138,7 @@ export default function App() {
   const gerar = async () => {
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:8000/api/gerar-time", {
+      const res = await axios.post("import.meta.env.VITE_API_BASE/api/gerar-time", {
         cartoletas,
         formacao,
       });
@@ -152,7 +152,7 @@ export default function App() {
   const carregarBacktest = async () => {
     setBtLoading(true);
     try {
-      const res = await axios.get("http://localhost:8000/api/backtest/resumo", {
+      const res = await axios.get("import.meta.env.VITE_API_BASE/api/backtest/resumo", {
         params: { cartoletas, formacao, top_k: 20, min_train_rounds: 5 },
       });
       setBt(res.data);
